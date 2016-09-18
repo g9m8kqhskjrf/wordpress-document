@@ -20,7 +20,6 @@ img {
 
 .siteHeader {
   text-align: center;
-  border-bottom: 1px solid #ccc;
   padding: 20px 0;
 }
 
@@ -31,9 +30,10 @@ img {
 }
 
 .siteFooter {
+  font-size: small;
   text-align: center;
-  border-top: 1px solid #ccc;
   padding: 20px 0;
+  background: #eee;
 }
 
 .cf:before,
@@ -51,7 +51,33 @@ img {
 }
 
 .contentNav{
-  border-top: 1px solid #ccc;
+  ol{
+    list-style-position: inside;
+    li{
+      border-bottom: 1px solid #ddd;
+      a{
+        display: inline-block;
+        padding: 0.5em 0;
+        &:hover{
+          background: #ddd;
+        }
+      }
+      ul{
+        li{
+          list-style-position: outside;
+          border-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+.main_content{
+  h2{
+    background-color: #fc0;
+    border-radius: 6px;
+    padding: 0.2em 0.6em;
+  }
 }
 
 .contentNav li,
