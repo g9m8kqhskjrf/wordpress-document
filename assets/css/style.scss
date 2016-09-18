@@ -53,6 +53,10 @@ img {
   border-top: 1px solid #ccc;
 }
 
+.contentNav li{
+  margin: 20px;
+}
+
 @media (min-width: 800px) {
   .contentNav{
     float: left;
